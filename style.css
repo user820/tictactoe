@@ -1,0 +1,212 @@
+/*!style.css -> index.html*/
+:root{
+    --l1-color: #F2EFE7;
+    --l2-color: #9ACBD0;
+    --l3-color: #48A6A7;
+    --l4-color: #2973B2;
+    --l5-color: #114b7e;
+}
+body{
+    background-color: var(--l2-color);
+    
+}
+
+#myTitle{
+    color: var(--l1-color); 
+    border: var(--l5-color) 5px solid;
+    -webkit-text-stroke: 1px var(--l4-color);
+    text-align: center;
+    font-size: 50px;
+    font-family:  'righteous';
+    margin: 10px;
+    background-color: #333;
+    text-shadow: #FFF 0 -1px 4px, var(--l4-color) 0 -2px 10px, var(--l4-color) 0 -10px 20px, var(--l4-color) 0 -18px 40px;
+    -webkit-box-shadow: 5px 5px 15px 5px var(--l3-color); 
+    box-shadow: 5px 5px 15px 5px var(--l3-color);
+    border-radius: 10px;
+    background: repeating-linear-gradient(
+    45deg,
+    var(--l2-color),
+    var(--l2-color) 10px,
+    var(--l3-color) 10px,
+    var(--l3-color) 20px)
+    
+}
+
+#myTurn{
+    border-radius: 10px;
+
+    color: var(--l1-color); 
+    border: var(--l5-color) 3px solid;
+    -webkit-text-stroke: 1px var(--l4-color);
+    text-align: center;
+    font-size: 30px;
+    font-family:  'righteous';
+    margin: 10px;
+    background-color: #333;
+    text-shadow: #FFF 0 -1px 4px, var(--l4-color) 0 -2px 10px, var(--l4-color) 0 -10px 20px, var(--l4-color) 0 -18px 40px;
+    -webkit-box-shadow: 5px 5px 15px 5px var(--l3-color); 
+    box-shadow: 5px 5px 15px 5px var(--l3-color);
+    background: repeating-linear-gradient(
+    45deg,
+    var(--l2-color),
+    var(--l2-color) 10px,
+    var(--l3-color) 10px,
+    var(--l3-color) 20px)
+}
+
+.slot{
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    width: 100px;
+    height: 100px;
+    font-size: 75px;
+    margin: 0;
+    background-color: var(--l2-color);
+    border: var(--l4-color) 5px solid;
+    padding: 0px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    -webkit-box-shadow: 0px 0px 15px 2px var(--l4-color); 
+    box-shadow: 0px 0px 15px 2px var(--l4-color);
+
+    font-family:  'righteous';
+    color: #c5dbdd; 
+    -webkit-text-stroke: 3px var(--l4-color);
+    text-align: center;
+
+    cursor: pointer; /* Change cursor on hover */
+
+}
+
+  
+.slot:hover {
+    background-color: var(--l3-color);
+    border: var(--l5-color) 5px solid;
+    transition-duration: 0.4s;
+    -webkit-box-shadow: 0px 0px 15px 5px var(--l5-color); 
+    box-shadow: 0px 0px 15px 5px var(--l5-color);
+    font-family:  'righteous';
+    color: rgb(115, 203, 211); 
+    -webkit-text-stroke: 3px var(--l5-color);
+    text-align: center;
+}
+
+#board{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: auto;
+    margin-bottom: auto; /* *CENTERING THIS DIV TOOK ME AGES */
+    
+}
+#langSelect{
+    font-size: 35px;
+}
+#langSelect a {
+    color: var(--l1-color); 
+    -webkit-text-stroke: 1px var(--l3-color);
+
+    text-decoration: none; /* Remove the underline from visited links */
+
+}
+
+#langSelect a:visited {
+    color: var(--l2-color); 
+    text-decoration: none; /
+}
+#selected{
+    color: var(--l5-color);
+    -webkit-text-stroke: 0.5px var(#1f6061);
+
+}
+#resetBtn{
+
+    color: var(--l1-color); 
+    border: var(--l5-color) 5px solid;
+    -webkit-text-stroke: 0.5px var(--l4-color);
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    font-family:  'righteous';
+    margin: 10px;
+    background-color: #333;
+    text-shadow: #FFF 0 -1px 4px, var(--l4-color) 0 -2px 10px, var(--l4-color) 0 -10px 20px, var(--l4-color) 0 -18px 40px;
+    -webkit-box-shadow: 5px 5px 15px 5px var(--l3-color); 
+    box-shadow: 5px 5px 15px 5px var(--l3-color);
+    border-radius: 10px;
+    background: repeating-linear-gradient(
+    45deg,
+    var(--l2-color),
+    var(--l2-color) 10px,
+    var(--l3-color) 10px,
+    var(--l3-color) 20px);
+}
+#resetBtn:hover{
+    background-color: var(--l3-color);
+    border: var(--l5-color) 5px solid;
+    transition-duration: 0.2s;
+    -webkit-box-shadow: 0px 0px 15px 5px var(--l5-color); 
+    box-shadow: 0px 0px 15px 5px var(--l5-color);
+    font-family:  'righteous';
+    color:  var(--l2-color);
+    -webkit-text-stroke: 3px var(--l5-color);
+    text-align: center;
+    background: repeating-linear-gradient(
+        45deg,
+        var(--l3-color),
+        var(--l3-color) 10px,
+        var(--l4-color) 10px,
+        var(--l4-color) 20px);
+    cursor: pointer; /* Change cursor on hover */
+
+}
+#resetBtn:active{
+    background: repeating-linear-gradient(
+        45deg,
+        var(--l4-color),
+        var(--l4-color) 10px,
+        var(--l5-color) 10px,
+        var(--l5-color) 20px);
+    color:  var(--l3-color);
+
+}
+#divOtherBtns{
+    display: flex;             /* Enables Flexbox */
+    justify-content: center;   /* Centers horizontally */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slot:active{
+    background-color: var(--l5-color);
+    transition-duration: 0.1s;
+}
+.row{
+    display: flex;
+}
